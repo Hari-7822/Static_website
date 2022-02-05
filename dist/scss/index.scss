@@ -1,0 +1,36 @@
+@use './components/nav.scss' ;
+
+*,
+*::before,
+*::after {
+    box-sizing : border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    display : flex;
+    width : 100vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap : 1rem;
+    padding : 1rem;
+    background: #d5f2fc;
+    
+    &__logo {
+
+        height: 7rem;
+        width: auto;
+        border-radius : 50%;
+
+    }
+
+    &__text {
+         font-family: 'DM Sans', sans-serif;
+         font-weight: 600;
+         letter-spacing: 1px;
+         font-size : clamp(1rem, 6.5vw + 0.01rem, 4rem);
+    }
+
+}

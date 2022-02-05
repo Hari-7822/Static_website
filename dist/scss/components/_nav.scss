@@ -1,0 +1,31 @@
+.navbar {
+    
+    display: inline;
+
+    &__home,
+    &__about,
+    &__contact {
+        font-weight: 600;
+        color: black;
+        border-bottom : 1px solid rgb(21, 200, 255);
+
+    }
+
+    a {
+        text-decoration: none;
+        color : black;
+        // text-align: center;
+
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        font-family: 'Arvo' , serif;
+        display : inline;
+    }
+
+
+}
