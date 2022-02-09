@@ -14,6 +14,7 @@
   list-style: none;
 }
 .navbar li {
+  padding: 0.2rem 0.8rem 0.2rem 0.8rem;
   font-family: "Arvo", serif;
   display: inline;
 }
@@ -45,5 +46,28 @@
   font-family: "DM Sans", sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
-  font-size: clamp(1rem, 6.5vw + 0.01rem, 4rem);
+  font-size: clamp(1rem, 7.5vw + 0.01rem, 3rem);
+}
+
+.content {
+  padding: 2rem;
+}
+.content .text-info {
+  position: relative;
+  font-weight: 600;
+  font-style: italic;
+}
+.content__founders {
+  position: relative;
+}
+.content__founders--head {
+  text-align: center;
+  font-weight: 900;
+}
+.content__faculty {
+  position: relative;
+}
+.content__faculty--head {
+  text-align: center;
+  font-weight: 600;
 }
