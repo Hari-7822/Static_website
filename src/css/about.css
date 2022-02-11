@@ -26,15 +26,13 @@
   height: fit-content;
   width: fit-content;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   /* border style starts here */
   border-width: 6px;
   border-style: solid;
   border-radius: 6px;
   border-image: linear-gradient(0deg, gold, cyan, purple) 1;
-  animation: 5s grad cubic-bezier(0, 0.64, 0.99, 0.53) infinite;
+  animation: 5s grad linear infinite;
 }
 
 @keyframes grad {}
@@ -75,4 +73,25 @@ body {
 code {
   color: #24a8e6;
   background: #ffffff00;
+}
+
+.content {
+  padding: 2rem;
+}
+.content .text-info {
+  position: relative;
+  font-weight: 600;
+  font-style: italic;
+}
+.content__founders--text {
+  text-align: center;
+  font-weight: 900;
+}
+.content__founders--n1, .content__founders--n2 {
+  display: flex;
+  flex-direction: row;
+  border-width: 3px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(45deg, #000000, #00ffc8);
 }

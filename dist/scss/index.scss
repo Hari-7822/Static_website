@@ -1,11 +1,19 @@
 @use './components/nav.scss' ;
 
+
 *,
 *::before,
 *::after {
     box-sizing : border-box;
     padding: 0;
     margin: 0;
+}
+
+body {
+//     background: #232526;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #ffffff;
 }
 
 .header {
@@ -20,7 +28,7 @@
     
     &__logo {
 
-        height: 7rem;
+        height: 5rem;
         width: auto;
         border-radius : 50%;
 
@@ -28,41 +36,17 @@
 
     &__text {
          font-family: 'DM Sans', sans-serif;
-         font-weight: 600;
+         font-weight: 500;  
          letter-spacing: 1px;
-         font-size : clamp(1rem, 7.5vw + 0.01rem, 3rem);
+         font-size : clamp(1rem, 6.5vw + 0.01rem, 3rem);
     }
 
 }
 
-.content {
-    padding : 2rem;
-
-    .text-info {
-        position : relative;
-        font-weight : 600;
-        font-style: italic;
-    }
-
-    &__founders {
-        position: relative;
-        
-
-        &--head {
-            text-align: center;
-            font-weight: 900;
-        }
-    }
-
-    &__faculty {
-        position: relative;
-        
-        &--head {
-            text-align : center;
-            font-weight : 600;
-        }
-    }
-
+code {
+    color : rgb(36, 168, 230);
+    background : #ffffff00;
 }
+
 
 
