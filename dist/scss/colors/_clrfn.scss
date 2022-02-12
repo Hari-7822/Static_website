@@ -1,0 +1,9 @@
+@use 'colors' as cl;
+
+@function light($cl) {
+    @return map-get(cl.$light, $cl);
+}
+
+@function dark($cl) {
+    @return map-get(cl.$dark, $cl)
+}

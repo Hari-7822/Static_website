@@ -17,9 +17,9 @@
     border-width: 6px;
     border-style : solid;
     border-radius: 6px;
-    border-image : linear-gradient(var(--angle), gold, cyan, purple) 1;
+    border-image : linear-gradient(var(--angle), rgb(0, 204, 255), rgba(0, 104, 222, 0.637), rgba(255, 25, 217, 0.623), rgb(2, 0, 128)) 1;
 
-    animation : 5s grad cubic-bezier(0, 0.64, 0.99, 0.53) infinite;
+    animation : 5s grad cubic-bezier( 0.6, 1.24, 1,0.99) infinite;
 
 
 }

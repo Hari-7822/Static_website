@@ -1,3 +1,5 @@
+@use '../colors/clrfn' as cl;
+
 .navbar {
     
     display: inline;
@@ -11,7 +13,7 @@
     &__contact {
         font-weight: 600;
         color: black;
-        border-bottom : 1px solid rgb(21, 200, 255);
+        border-bottom : 1px solid cl.light(reg);
 
     }
 
@@ -30,6 +32,8 @@
         padding: 0.2rem 0.8rem 0.2rem 0.8rem;
         font-family: 'Arvo' , serif;
         display : inline;
+
+        font-size : clamp(1rem , 1.5vw + 0.01rem, 1.2rem);
     }
 
 

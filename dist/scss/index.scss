@@ -1,19 +1,12 @@
-@use './components/nav.scss' ;
+@use 'components/nav' ;
+@use 'colors/clrfn' as cl;
+@use 'font/fonts' as f;
+@use 'reset';
 
 
-*,
-*::before,
-*::after {
-    box-sizing : border-box;
-    padding: 0;
-    margin: 0;
-}
 
 body {
-//     background: #232526;  /* fallback for old browsers */
-// background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-// background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-background: #ffffff;
+    background: #ffffff;
 }
 
 .header {
@@ -24,7 +17,7 @@ background: #ffffff;
     align-items: center;
     gap : 1rem;
     padding : 1rem;
-    background: #d5f2fc;
+    background: cl.light(lighter);
     
     &__logo {
 
@@ -44,9 +37,68 @@ background: #ffffff;
 }
 
 code {
-    color : rgb(36, 168, 230);
+    color : cl.light(reg);
     background : #ffffff00;
 }
 
 
 
+.content {
+    padding : 0px 4px 0px 4px;
+
+    font-size : f.$fsize;
+
+    &__course {
+        &--intro {
+            font-size: clamp(1rem, 5.5vw + 0.3rem, 1.7rem);
+        }
+    }
+
+    &__mail {
+        &--id {
+            color : cl.light(dark);
+            text-decoration : none;
+        }
+    }
+
+    &__course--grp {
+
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+
+        gap : 0.5rem;
+
+        font-size : clamp(1rem, 5.5vw + 0.3rem, 1.7rem);
+
+        &-head {
+            font-family : f.$poppins;
+            letter-spacing: 2px;
+        }
+
+        &-text {
+            font-family : f.$Montserrat;
+        }
+    }
+
+    &__ul {
+        display : flex;
+        justify-content: center;
+    }
+
+    &__br {
+        &--head {
+            font-family : f.$poppins;
+            letter-spacing: 2px;
+
+            &-end{
+                font-family : f.$rubik;
+            }
+        }
+    }
+}
+
+.txt {
+    font-weight: 600;
+}

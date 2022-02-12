@@ -7,7 +7,7 @@
 .navbar__home, .navbar__about, .navbar__contact {
   font-weight: 600;
   color: black;
-  border-bottom: 1px solid #15c8ff;
+  border-bottom: 1px solid #14b1e6;
 }
 .navbar a {
   text-decoration: none;
@@ -20,28 +20,20 @@
   padding: 0.2rem 0.8rem 0.2rem 0.8rem;
   font-family: "Arvo", serif;
   display: inline;
+  font-size: clamp(1rem, 1.5vw + 0.01rem, 1.2rem);
 }
 
-.br {
-  height: fit-content;
-  width: fit-content;
-  display: flex;
-  justify-content: center;
-  /* border style starts here */
-  border-width: 6px;
-  border-style: solid;
-  border-radius: 6px;
-  border-image: linear-gradient(0deg, gold, cyan, purple) 1;
-  animation: 5s grad linear infinite;
-}
-
-@keyframes grad {}
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+::selection {
+  background: #00000028;
+  color: #016b8e;
 }
 
 body {
@@ -56,7 +48,7 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  background: #d5f2fc;
+  background: #d4f2fc;
 }
 .header__logo {
   height: 5rem;
@@ -71,27 +63,71 @@ body {
 }
 
 code {
-  color: #24a8e6;
+  color: #14b1e6;
   background: #ffffff00;
 }
 
 .content {
+  padding: 0px 4px 0px 4px;
+  font-size: clamp(1rem, 5.5vw + 0.3rem, 1.7rem);
+}
+.content__course--intro {
+  font-size: clamp(1rem, 5.5vw + 0.3rem, 1.7rem);
+}
+.content__mail--id {
+  color: #016b8e;
+  text-decoration: none;
+}
+.content__course--grp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: clamp(1rem, 5.5vw + 0.3rem, 1.7rem);
+}
+.content__course--grp-head {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+}
+.content__course--grp-text {
+  font-family: "Montserrat", sans-serif;
+}
+.content__ul {
+  display: flex;
+  justify-content: center;
+}
+.content__br--head {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+}
+.content__br--head-end {
+  font-family: "Rubik", sans-serif;
+}
+
+.txt {
+  font-weight: 600;
+}
+
+.content {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 .content .text-info {
   position: relative;
   font-weight: 600;
   font-style: italic;
 }
-.content__founders--text {
-  text-align: center;
-  font-weight: 900;
+.content__founders--head {
+  font-size: clamp(1rem, 5.5vw + 0.9rem, 4rem);
+  font-weight: 600;
+  font-family: system-ui;
 }
 .content__founders--n1, .content__founders--n2 {
   display: flex;
   flex-direction: row;
-  border-width: 3px;
-  border-style: solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(45deg, #000000, #00ffc8);
+  justify-content: center;
 }

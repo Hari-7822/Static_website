@@ -1,29 +1,30 @@
-@use 'index' ;
-
+@use 'index';
 .content {
-    padding : 2rem;
-
+    padding: 2rem;
     .text-info {
-        position : relative;
-        font-weight : 600;
+        position: relative;
+        font-weight: 600;
         font-style: italic;
     }
 
-    &__founders--text {
-            text-align: center;
-            font-weight: 900;
-        }
-    
+    display : flex;
+    flex-direction: column;
 
+    justify-content: center;
+    align-items: center;
+    gap : 1rem;
+    
+    
+    &__founders--head {
+        font-size: clamp(1rem, 5.5vw + 0.9rem, 4rem);
+        font-weight: 600;
+        font-family: system-ui;
+    }
     &__founders--n1,
     &__founders--n2 {
-            display: flex;
-            flex-direction: row;
-
-            border-width : 3px;
-            border-style : solid;
-            border-image-slice:1;
-            border-image-source : linear-gradient(45deg, #000000, #00ffc8);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
     }
-
 }
