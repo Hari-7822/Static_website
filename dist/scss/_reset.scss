@@ -1,4 +1,4 @@
-@use 'colors/clrfn' as f;
+@use 'colors/clrfn' as cl;
 
 *,
 *::before,
@@ -9,6 +9,10 @@
 }
 
 ::selection {
-    background: #00000028;
-    color : f.light(dark);
+    background: rgba(54, 54, 54, 0.616);
+    color : cl.light(lighter);
+}
+
+html{
+    overflow-x: hidden;
 }

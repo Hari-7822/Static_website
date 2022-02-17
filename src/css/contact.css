@@ -156,3 +156,19 @@ body {
 .txt {
   font-weight: 600;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content__num1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content__num1 > code {
+  font-family: "Iceland", cursive;
+  color: #016b8e;
+  font-size: larger;
+}

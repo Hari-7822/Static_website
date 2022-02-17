@@ -1,3 +1,9 @@
+code {
+  font-family: "Mukta", sans-serif;
+  color: #14b1e6;
+  background: #ffffff00;
+}
+
 .navbar {
   display: inline;
 }
@@ -23,6 +29,45 @@
   font-size: clamp(1rem, 1.5vw + 0.01rem, 1.2rem);
 }
 
+::-webkit-scrollbar {
+  scroll-behavior: smooth;
+  width: 0.5rem;
+  background-color: rgba(36, 36, 36, 0.226);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 11rem;
+  background-color: #d4f2fc;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #81defd;
+}
+
+.foot {
+  position: sticky;
+  left: 0%;
+  bottom: 0%;
+  width: 100vw;
+  margin-top: 1rem;
+  background: #d4f2fc;
+  display: flex;
+  flex-direction: column;
+}
+.foot__relink {
+  display: flex;
+  flex-direction: row;
+  gap: 4vw;
+}
+.foot__relink--head {
+  font-family: "Red Hat Display", sans-serif;
+}
+.foot__relink > a {
+  text-decoration: none;
+  color: #016b8e;
+}
+.foot__relink > a:hover {
+  color: #002533;
+}
+
 *,
 *::before,
 *::after {
@@ -32,12 +77,17 @@
 }
 
 ::selection {
-  background: #00000028;
-  color: #016b8e;
+  background: rgba(54, 54, 54, 0.616);
+  color: #d4f2fc;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
   background: #ffffff;
+  overflow-x: hidden;
 }
 
 .header {
@@ -60,11 +110,6 @@ body {
   font-weight: 500;
   letter-spacing: 1px;
   font-size: clamp(1rem, 6.5vw + 0.01rem, 3rem);
-}
-
-code {
-  color: #14b1e6;
-  background: #ffffff00;
 }
 
 .content {
@@ -95,6 +140,10 @@ code {
 .content__ul {
   display: flex;
   justify-content: center;
+  gap: 0.4rem;
+}
+.content__br {
+  gap: 1rem;
 }
 .content__br--head {
   font-family: "Poppins", sans-serif;
@@ -116,18 +165,34 @@ code {
   align-items: center;
   gap: 1rem;
 }
-.content .text-info {
-  position: relative;
-  font-weight: 600;
-  font-style: italic;
-}
 .content__founders--head {
+  padding: 0px 1px 0px 1px;
   font-size: clamp(1rem, 5.5vw + 0.9rem, 4rem);
-  font-weight: 600;
-  font-family: system-ui;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  width: 100vw;
+  text-align: center;
 }
 .content__founders--n1, .content__founders--n2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+.content__faculty {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.content__faculty--head {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: clamp(1rem, 5.5vw + 0.9rem, 4rem);
+}
+.content__faculty--n {
+  font-family: "Red Hat Display", sans-serif;
+}
+.content__faculty--n > code {
+  font-family: "Mukta", sans-serif;
+  font-weight: 200;
 }

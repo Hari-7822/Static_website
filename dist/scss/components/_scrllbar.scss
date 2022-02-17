@@ -1,0 +1,22 @@
+@use '../colors/clrfn' as cl;
+
+
+
+::-webkit-scrollbar {
+
+    scroll-behavior: smooth;
+    
+    width : 0.5rem;
+
+    background-color: rgba(36, 36, 36, 0.226);
+
+    &-thumb {
+        border-radius: 11rem;
+        background-color : cl.light(lighter);
+
+        &:hover {
+            background-color : cl.light(light);
+        }
+    }
+    
+}

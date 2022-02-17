@@ -1,0 +1,8 @@
+@use '../colors/clrfn' as cl;
+@use '../font/fonts' as f;
+
+code {
+    font-family: f.$mukta;
+    color : cl.light(reg);
+    background : #ffffff00;
+}

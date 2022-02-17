@@ -1,12 +1,11 @@
 @use 'index';
+@use './components/codetg';
+@use './font/fonts' as f;
+@use 'reset';
+
+
 .content {
     padding: 2rem;
-    .text-info {
-        position: relative;
-        font-weight: 600;
-        font-style: italic;
-    }
-
     display : flex;
     flex-direction: column;
 
@@ -16,9 +15,13 @@
     
     
     &__founders--head {
-        font-size: clamp(1rem, 5.5vw + 0.9rem, 4rem);
-        font-weight: 600;
-        font-family: system-ui;
+        padding : 0px 1px 0px 1px;
+        font-size: f.$hsize;
+        font-weight: 500;
+        font-family: f.$Montserrat;
+
+        width : 100vw;
+        text-align : center;
     }
     &__founders--n1,
     &__founders--n2 {
@@ -27,4 +30,31 @@
         justify-content: center;
         
     }
+
+    &__faculty {
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        &--head {
+            text-align: center;
+
+            font-family : f.$Montserrat;
+            font-weight: 500;
+            font-size : f.$hsize;
+        }
+
+        &--n {
+            font-family: f.$redhat;
+
+            >code {
+                font-family : f.$mukta;
+                font-weight: 200;
+            }
+        }
+
+    }
+
 }
+

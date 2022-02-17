@@ -1,12 +1,17 @@
-@use 'components/nav' ;
 @use 'colors/clrfn' as cl;
 @use 'font/fonts' as f;
-@use 'reset';
 
+@use 'components/codetg';
+@use 'components/nav';
+@use 'components/scrllbar';
+@use 'components/footer';
+
+@use 'reset';
 
 
 body {
     background: #ffffff;
+    overflow-x: hidden;
 }
 
 .header {
@@ -36,12 +41,6 @@ body {
 
 }
 
-code {
-    color : cl.light(reg);
-    background : #ffffff00;
-}
-
-
 
 .content {
     padding : 0px 4px 0px 4px;
@@ -50,7 +49,7 @@ code {
 
     &__course {
         &--intro {
-            font-size: clamp(1rem, 5.5vw + 0.3rem, 1.7rem);
+            font-size: f.$fsize;
         }
     }
 
@@ -70,7 +69,7 @@ code {
 
         gap : 0.5rem;
 
-        font-size : clamp(1rem, 5.5vw + 0.3rem, 1.7rem);
+        font-size : f.$fsize;
 
         &-head {
             font-family : f.$poppins;
@@ -85,9 +84,13 @@ code {
     &__ul {
         display : flex;
         justify-content: center;
+        gap : 0.4rem;
     }
 
     &__br {
+        
+        gap : 1rem;
+
         &--head {
             font-family : f.$poppins;
             letter-spacing: 2px;
@@ -102,3 +105,6 @@ code {
 .txt {
     font-weight: 600;
 }
+
+
+

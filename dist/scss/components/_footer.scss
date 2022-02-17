@@ -1,0 +1,37 @@
+@use '../colors/clrfn' as cl;
+@use '../font/fonts' as f;
+
+
+.foot {
+    position: sticky;
+    left:0%;
+    bottom : 0%;
+
+    width : 100vw;
+
+    margin-top: 1rem;
+    background : cl.light(lighter);
+
+    display: flex;
+    flex-direction: column;
+
+    &__relink {
+
+        display: flex;
+        flex-direction: row;
+        gap : 4vw;
+
+        &--head {
+            font-family: f.$redhat;
+        }
+
+        >a{
+            text-decoration: none;
+            color : cl.light(dark);
+            
+            &:hover{
+                color : cl.light(darker);
+            } 
+        }
+    }
+}

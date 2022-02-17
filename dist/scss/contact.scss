@@ -1,0 +1,27 @@
+@use 'index';
+
+@use './colors/clrfn' as cl;
+@use './font/fonts' as f;
+
+
+
+.content{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__num1{
+
+        display: flex;
+        flex-direction: column;
+        align-items : center;
+
+    >code {
+    
+        font-family: f.$iceland;
+        color : cl.light(dark);
+        font-size: larger;
+    }
+}
+}
