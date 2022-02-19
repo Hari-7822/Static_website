@@ -3,6 +3,7 @@
 
 @use 'components/codetg';
 @use 'components/nav';
+@use 'components/mixin' as m;
 @use 'components/scrllbar';
 @use 'components/footer';
 
@@ -15,11 +16,8 @@ body {
 }
 
 .header {
-    display : flex;
+    @include m.flex(row);
     width : 100vw;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     gap : 1rem;
     padding : 1rem;
     background: cl.light(lighter);
@@ -62,10 +60,7 @@ body {
 
     &__course--grp {
 
-        display: flex;
-        flex-direction: column;
-        // justify-content: center;
-        align-items: center;
+        @include m.flex(column, center, normal);
 
         gap : 0.5rem;
 
@@ -82,8 +77,7 @@ body {
     }
 
     &__ul {
-        display : flex;
-        justify-content: center;
+        @include m.flex(row, normal, center);
         gap : 0.4rem;
     }
 

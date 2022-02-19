@@ -1,21 +1,30 @@
 @use 'index';
+@use './components/mixin' as m;
 
-@use './colors/clrfn' as cl;
-@use './font/fonts' as f;
+@use 'colors/clrfn' as cl;
+@use 'font/fonts' as f;
+
+@use 'components/footer';
 
 
 
 .content{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+    font-size: clamp(1rem, 5.5vw + 0.3rem, 1.7rem);
+    @include m.flex(column, center, center);
+
+    &__live {
+        @include m.flex();
+
+        &--tgl{
+            font-family: f.$iceland;
+            text-align: center;
+        }
+    }
 
     &__num1{
 
-        display: flex;
-        flex-direction: column;
-        align-items : center;
+        @include m.flex(column, center, normal);
 
     >code {
     

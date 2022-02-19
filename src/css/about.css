@@ -43,18 +43,22 @@ code {
 }
 
 .foot {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: normal;
   position: sticky;
   left: 0%;
   bottom: 0%;
   width: 100vw;
   margin-top: 1rem;
   background: #d4f2fc;
-  display: flex;
-  flex-direction: column;
 }
 .foot__relink {
   display: flex;
   flex-direction: row;
+  align-items: normal normal;
+  justify-content: center;
   gap: 4vw;
 }
 .foot__relink--head {
@@ -92,10 +96,10 @@ body {
 
 .header {
   display: flex;
-  width: 100vw;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: 100vw;
   gap: 1rem;
   padding: 1rem;
   background: #d4f2fc;
@@ -127,6 +131,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: normal;
   gap: 0.5rem;
   font-size: clamp(1rem, 5.5vw + 0.3rem, 1.7rem);
 }
@@ -139,6 +144,8 @@ body {
 }
 .content__ul {
   display: flex;
+  flex-direction: row;
+  align-items: normal;
   justify-content: center;
   gap: 0.4rem;
 }
@@ -161,8 +168,8 @@ body {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
 .content__founders--head {

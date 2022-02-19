@@ -1,16 +1,13 @@
 @use 'index';
-@use './components/codetg';
-@use './font/fonts' as f;
+@use 'components/codetg';
+@use 'font/fonts' as f;
+@use 'components/mixin' as m;
 @use 'reset';
 
 
 .content {
     padding: 2rem;
-    display : flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
+    @include m.flex();
     gap : 1rem;
     
     

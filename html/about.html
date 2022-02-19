@@ -14,11 +14,10 @@
         <link rel="stylesheet" href="../src/css/about.css" />
         
 
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Arvo&family=Gideon+Roman&family=Montserrat&family=Poppins&family=Rubik&family=Mukta&family=Mulish&family=Red+Hat+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Arvo&family=Gideon+Roman&family=Montserrat&family=Poppins&family=Rubik&family=Mukta&family=Mulish&family=Red+Hat+Display&family=Iceland&display=swap" rel="stylesheet">
         
         
         <script src = "https://cdn.jsdelivr.net/npm/bpptstrap@5.1.3/dist/js/bootstrap.bundle.min.js" ></script>
-        <script src="../dist/js/script.js"></script>
     </head>
 
     <body>
@@ -84,6 +83,9 @@
                     <div class="content__creds">
                         <h4 class = "content__creds--msme-head" onclick = "msme()">MSME no. </h4>
                         <code class="content--creds--msme-id" id = "msme" ></code>
+
+                        <h4 class="content__creds--gst-head" onclick = "gst()">GST no.</h4>
+                        <code class="content__creds--gst-id" id = "gst"></code>
                     </div>
             </div>
         </main>
@@ -108,5 +110,23 @@
         </footer>
 
     </body>
+
+    <script>
+
+        var a = document.querySelector(".content__creds--gst-head");
+        var b = document.querySelector("#gst");
+
+        var x = document.querySelector(".content__creds--msme-head");
+        var y = document.querySelector("#msme");
+
+        function msme() {
+            y.innerHTML = "UDYAM - TN- 24-0031420";
+        }
+
+        function gst() {
+            b.innerHTML = "TBA";
+        }
+
+    </script>
 
 </html>

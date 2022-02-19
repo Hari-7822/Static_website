@@ -1,8 +1,12 @@
 @use '../colors/clrfn' as cl;
 @use '../font/fonts' as f;
+@use 'mixin' as m;
 
 
 .foot {
+    
+    @include m.flex(column, normal, normal);
+
     position: sticky;
     left:0%;
     bottom : 0%;
@@ -12,13 +16,9 @@
     margin-top: 1rem;
     background : cl.light(lighter);
 
-    display: flex;
-    flex-direction: column;
-
     &__relink {
 
-        display: flex;
-        flex-direction: row;
+        @include m.flex(row, normal normal);
         gap : 4vw;
 
         &--head {
