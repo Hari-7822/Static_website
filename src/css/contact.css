@@ -162,7 +162,7 @@ body {
   gap: 1.5vh;
 }
 .content__br--list > li {
-  width: 99%;
+  width: 98%;
   position: relative;
   left: 20px;
 }
