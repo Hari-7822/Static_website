@@ -5,7 +5,7 @@
     --angle : 0deg;
 
     height : fit-content;
-    width : fit-content;
+    width : 65vw;
 
     display : flex;
     flex-direction: column;

@@ -152,6 +152,14 @@ body {
 .content__br {
   gap: 1rem;
 }
+.content__br--list {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: center;
+  position: relative;
+  left: 4vw;
+}
 .content__br--head {
   font-family: "Poppins", sans-serif;
   letter-spacing: 2px;

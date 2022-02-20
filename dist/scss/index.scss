@@ -85,11 +85,17 @@ body {
         
         gap : 1rem;
 
+        &--list {
+            @include m.flex(column, normal, center);
+            position : relative;
+            left : 4vw;
+        }
+        
         &--head {
             font-family : f.$poppins;
             letter-spacing: 2px;
 
-            &-end{
+        &-end{
                 font-family : f.$rubik;
             }
         }
