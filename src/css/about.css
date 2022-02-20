@@ -158,7 +158,13 @@ body {
   align-items: normal;
   justify-content: normal;
   position: relative;
-  left: 4vw;
+  left: 2.5vw;
+  gap: 1.5vh;
+}
+.content__br--list > li {
+  width: 99%;
+  position: relative;
+  left: 20px;
 }
 .content__br--head {
   font-family: "Poppins", sans-serif;
@@ -166,6 +172,7 @@ body {
 }
 .content__br--head-end {
   font-family: "Rubik", sans-serif;
+  color: #002533;
 }
 
 .txt {

@@ -88,7 +88,15 @@ body {
         &--list {
             @include m.flex(column, normal, normal);
             position : relative;
-            left : 4vw;
+            left : 2.5vw;
+            gap: 1.5vh;
+
+            >li{
+                width : 99%;
+                position: relative;
+                left : 20px;
+            }
+
         }
         
         &--head {
@@ -97,6 +105,7 @@ body {
 
         &-end{
                 font-family : f.$rubik;
+                color : cl.light(darker);
             }
         }
     }
