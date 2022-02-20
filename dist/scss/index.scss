@@ -86,7 +86,7 @@ body {
         gap : 1rem;
 
         &--list {
-            @include m.flex(column, normal, center);
+            @include m.flex(column, normal, normal);
             position : relative;
             left : 4vw;
         }
