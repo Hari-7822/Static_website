@@ -18,7 +18,7 @@
 
     &__relink {
 
-        @include m.flex(row, normal normal);
+        @include m.flex(row, normal, normal);
         gap : 4vw;
 
         &--head {

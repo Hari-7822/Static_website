@@ -57,8 +57,8 @@ code {
 .foot__relink {
   display: flex;
   flex-direction: row;
-  align-items: normal normal;
-  justify-content: center;
+  align-items: normal;
+  justify-content: normal;
   gap: 4vw;
 }
 .foot__relink--head {
@@ -162,7 +162,7 @@ body {
   gap: 1.5vh;
 }
 .content__br--list > li {
-  width: 98%;
+  width: 90%;
   position: relative;
   left: 20px;
 }
@@ -172,7 +172,7 @@ body {
 }
 .content__br--head-end {
   font-family: "Rubik", sans-serif;
-  color: #002533;
+  color: #016b8e;
 }
 
 .txt {

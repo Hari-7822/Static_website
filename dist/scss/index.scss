@@ -92,7 +92,7 @@ body {
             gap: 1.5vh;
 
             >li{
-                width : 98%;
+                width : 90%;
                 position: relative;
                 left : 20px;
             }
@@ -105,7 +105,7 @@ body {
 
         &-end{
                 font-family : f.$rubik;
-                color : cl.light(darker);
+                color : cl.light(dark);
             }
         }
     }
@@ -114,6 +114,3 @@ body {
 .txt {
     font-weight: 600;
 }
-
-
-
