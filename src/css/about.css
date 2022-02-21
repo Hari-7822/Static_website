@@ -59,6 +59,8 @@ code {
   flex-direction: row;
   align-items: normal;
   justify-content: normal;
+  font-weight: 600;
+  text-align: center;
   gap: 4vw;
 }
 .foot__relink--head {
@@ -195,15 +197,20 @@ body {
   width: 100vw;
   text-align: center;
 }
-.content__founders--n1, .content__founders--n2 {
+.content__founders--text {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: normal;
+}
+.content__founders--name1, .content__founders--name2 {
+  font-family: "Cinzel" serif;
 }
 .content__faculty {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  align-items: normal;
+  justify-content: center;
 }
 .content__faculty--head {
   text-align: center;

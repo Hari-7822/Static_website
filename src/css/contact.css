@@ -59,6 +59,8 @@ code {
   flex-direction: row;
   align-items: normal;
   justify-content: normal;
+  font-weight: 600;
+  text-align: center;
   gap: 4vw;
 }
 .foot__relink--head {

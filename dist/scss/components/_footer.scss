@@ -19,6 +19,10 @@
     &__relink {
 
         @include m.flex(row, normal, normal);
+
+        font-weight: 600;
+        text-align: center;
+
         gap : 4vw;
 
         &--head {
