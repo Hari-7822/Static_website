@@ -13,6 +13,32 @@
     font-size: clamp(1rem, 5.5vw + 0.3rem, 1.7rem);
     @include m.flex(column, center, center);
 
+    gap : 1rem;
+
+    &__mail {
+        .fas{
+            color : cl.light(dark);
+
+            &:hover {
+                color : cl.light(reg);
+            }
+        }
+    }
+
+
+    &__jd {
+        >a{
+            font-family: sans-serif;
+            text-decoration: none;
+            color : cl.light(reg);
+
+            &:hover {
+                color : cl.light(dark)
+            }
+        }
+    }
+
+
     &__live {
         @include m.flex();
 

@@ -187,6 +187,21 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+}
+.content__mail .fas {
+  color: #016b8e;
+}
+.content__mail .fas:hover {
+  color: #14b1e6;
+}
+.content__jd > a {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #14b1e6;
+}
+.content__jd > a:hover {
+  color: #016b8e;
 }
 .content__live {
   display: flex;
