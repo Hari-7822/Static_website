@@ -31,6 +31,15 @@
         font-family: f.$iceland;
         color : cl.light(dark);
         font-size: larger;
+        
     }
 }
+}
+
+
+@media screen and(min-width : 425px) {
+
+    .content__live--tgl {
+        width : 80vw;
+    }
 }

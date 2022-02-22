@@ -202,9 +202,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: normal;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 .content__founders--name1, .content__founders--name2 {
-  font-family: "Cinzel" serif;
+  font-family: "Cinzel", serif;
 }
 .content__faculty {
   display: flex;
@@ -224,6 +226,12 @@ body {
 .content__faculty--n > code {
   font-family: "Mukta", sans-serif;
   font-weight: 200;
+}
+.content__faculty--n1 {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: normal;
 }
 .content__creds--msme-head {
   font-family: "mulish", sans-serif;

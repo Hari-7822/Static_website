@@ -24,6 +24,9 @@
         }
     &--text {
         @include m.flex(column, center, normal);
+
+        font-family: f.$Montserrat;
+        font-weight: 600;        
         
     }
 
@@ -52,6 +55,11 @@
                 font-family : f.$mukta;
                 font-weight: 200;
             }
+        }
+
+        &--n1 {
+            @include m.flex(column, normal, normal);
+            
         }
 
     }
